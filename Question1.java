@@ -7,9 +7,6 @@ public class Question1
      * 
      * Hint: System.out.println(...)
      */
-    public static void PrintTest(String[] args)
-    {
-      System.out.println("Hello World!");
-    }
+    System.out.println("Hello World!");
   }
 }
