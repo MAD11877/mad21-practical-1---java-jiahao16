@@ -28,7 +28,7 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int no = in.nextInt();
-    ArrayList<Int> numList = new ArrayList<Int>();
+    ArrayList<Integer> numList = new ArrayList<Integer>();
     int mode = 0;
     int highest = 0;
     for (int i = no; i > 0; i--){
