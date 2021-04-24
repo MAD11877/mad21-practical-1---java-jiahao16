@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
 public class Question5
 {
   public static void main(String[] args)
@@ -27,6 +27,27 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int no = in.nextInt();
+    ArrayList<Integer> numList = new ArrayList<Integer>();
+    int mode = 0;
+    int highest = 0;
+    for (int i = no; i > 0; i--){
+      int num = in.nextInt();
+      numList.add(num);
+    }
+    for (int i = 0; i < no; i++){
+      int number = numList.get(i);
+      int occurence = 0;
+      for (int j = 0; j < no; j++){
+        if(numList.get(j) == number){
+          occurence++;
+        }
+        if (occurence>highest){
+          mode= number;
+          highest=occurence;
+        }
+      }
+    }
+    System.out.print(mode);
   }
 }
